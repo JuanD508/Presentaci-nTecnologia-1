@@ -230,31 +230,155 @@
 
     <h2>Programming Languages</h2>
     <h3>Reserved Words in MicroPython</h3>
-    <pre>
-        False    # Boolean false  
-        True     # Boolean true  
-        None     # Represents null  
-        and      # Logical AND  
-        or       # Logical OR  
-        not      # Logical NOT  
-        if       # Conditional statement  
-        else     # Alternative condition  
-        while    # Loop while condition is true  
-        def      # Defines a function  
-    </pre>
+    <pre>False
+┌───────────────────┐
+│if led_on == False:│
+│    turn_off()     │
+└───────────────────┘</pre>
+
+    <pre>True
+┌───────────────────────┐
+│ while sensor_active:  │
+│     take_measurement()│
+└───────────────────────┘</pre>
+
+    <pre>None
+┌──────────────────────────┐
+│ result = find_device()   │
+│ if result is None:       │
+│     print("Not found!")  │
+└──────────────────────────┘</pre>
+
+    <pre>and
+┌─────────────────────────────┐
+│ if temp > 25 and sun_is_up: │
+│     start_cooling()         │
+└─────────────────────────────┘</pre>
+
+    <pre>or
+┌─────────────────────────────┐
+│ if battery_low or no_signal:│
+│     enter_sleep_mode()      │
+└─────────────────────────────┘</pre>
+
+    <pre>not
+┌───────────────────────────────┐
+│ if not door_locked:           │
+│     sound_alarm()             │
+└───────────────────────────────┘</pre>
+
+    <pre>if
+┌───────────────────────┐
+│ if temperature > 30:  │
+│     fan.on()          │
+│     cooler.on()       │
+└───────────────────────┘</pre>
+
+    <pre>else
+┌─────────────────────────────┐
+│ if button_pressed:          │
+│     start_program()         │
+│ else:                       │
+│     show_waiting_screen()   │
+└─────────────────────────────┘</pre>
+
+    <pre>while
+┌─────────────────────────────┐
+│ while data_available:       │
+│     packet = read_data()    │
+│     process(packet)         │
+└─────────────────────────────┘</pre>
+
+    <pre>def
+┌───────────────────────────────┐
+│ def blink_led(times):         │
+│     for _ in range(times):    │
+│         led.on()              │
+│         sleep(0.5)            │
+│         led.off()             │
+└───────────────────────────────┘</pre>
 
     <h3>Reserved Words in C++</h3>
-    <pre>
-        int       // Integer data type  
-        float     // Floating-point data type  
-        if        // Conditional statement  
-        else      // Alternative condition  
-        while     // Loop while condition is true  
-        for       // Loop with initialization, condition, and increment  
-        return    // Returns a value from a function  
-        class     // Defines a class  
-        public    // Access specifier  
-        private   // Access specifier  
-    </pre>
+    <pre>int
+┌───────────────────────┐
+│ int counter = 0;      │
+│ counter++;            │
+│ cout << counter;      │
+└───────────────────────┘</pre>
+
+    <pre>float
+┌───────────────────────────┐
+│ float temperature = 23.5; │
+│ if (temperature > 25.0)   │
+│    cooler.on();           │
+└───────────────────────────┘</pre>
+
+    <pre>if
+┌───────────────────────────┐
+│ if (speed > 120) {        │
+│    trigger_alarm();       │
+│ }                         │
+└───────────────────────────┘</pre>
+
+    <pre>else
+┌───────────────────────────────┐
+│ if (user == "admin") {        │
+│    show_admin_panel();        │
+│ } else {                      │
+│    show_guest_panel();        │
+│ }                             │
+└───────────────────────────────┘</pre>
+
+    <pre>while
+┌───────────────────────────────┐
+│ while (engine_running) {      │
+│    monitor_sensors();         │
+│    adjust_fuel();             │
+│ }                             │
+└───────────────────────────────┘</pre>
+
+    <pre>for
+┌───────────────────────────────┐
+│ for (int i=0; i<10; i++) {    │
+│    cout << "Loading... " << i;│
+│    sleep(1);                  │
+│ }                             │
+└───────────────────────────────┘</pre>
+
+    <pre>return
+┌───────────────────────────────┐
+│float calculate_circle(float r)│
+│{                              │
+│   return 3.1416 * r * r;      │
+│}                              │
+└───────────────────────────────┘</pre>
+
+    <pre>class
+┌───────────────────────────────┐
+│ class Robot {                 │
+│   public:                     │
+│     void walk();              │
+│     void talk();              │
+│ };                            │
+└───────────────────────────────┘</pre>
+
+    <pre>public
+┌───────────────────────────────┐
+│ class BankAccount {           │
+│   public:                     │
+│     void deposit(float amt);  │
+│   private:                    │
+│     float balance;            │
+│ };                            │
+└───────────────────────────────┘</pre>
+
+    <pre>private
+┌───────────────────────────────┐
+│ class SecureSystem {          │
+│   private:                    │
+│     string password;          │
+│     bool verify_user();       │
+│ };                            │
+└───────────────────────────────┘</pre>
 </body>
 </html>
